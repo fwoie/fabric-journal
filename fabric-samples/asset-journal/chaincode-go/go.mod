@@ -1,4 +1,4 @@
-module github.com/hyperledger/fabric-samples/auction/chaincode-go
+module github.com/hyperledger/fabric-samples/journal/chaincode-go
 
 go 1.15
 

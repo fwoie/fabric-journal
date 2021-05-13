@@ -42,7 +42,7 @@ async function createJournal(ccp,wallet,user,journalID) {
         console.log('*** Result: committed');
 
         console.log('\n--> Evaluate Transaction: query the auction that was just created');
-        let result = await contract.evaluateTransaction('GetJournal',journalID);
+        let result = await contract.evaluateTransaction('ReadJournal',journalID);
         console.log('*** Result: Journal: ' + prettyJSONString(result.toString()));
 
         gateway.disconnect();

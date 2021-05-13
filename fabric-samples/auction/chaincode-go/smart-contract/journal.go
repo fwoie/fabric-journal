@@ -1,4 +1,4 @@
-package chaincode
+package auction
 
 import (
 	"encoding/json"

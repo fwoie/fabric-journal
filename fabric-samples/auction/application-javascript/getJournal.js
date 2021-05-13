@@ -36,7 +36,7 @@ async function getJournal(ccp,wallet,user,journalID) {
         const contract = network.getContract(myChaincodeName);
 
         console.log('\n--> Evaluate Transaction: Getting journal');
-        let result = await contract.evaluateTransaction('GetJournal',journalID);
+        let result = await contract.evaluateTransaction('ReadJournal',journalID);
         console.log('*** Result: Journal: ' + prettyJSONString(result.toString()));
 
         gateway.disconnect();

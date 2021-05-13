@@ -52,7 +52,7 @@ async function main() {
     try {
 
         if (process.argv[2] == undefined || process.argv[3] == undefined
-            || process.argv[4] == undefined) {
+            || process.argv[4] == undefined || process.argv[5] == undefined) {
             console.log("Usage: node requestAccess.js org userID journalID access");
             process.exit(1);
         }
